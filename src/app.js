@@ -12,11 +12,12 @@ const stationsRouter = require('./routes/stations.routers');
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/wallets', walletsRouter);
 app.use('/api/users', UsersRouter);
+app.use('/api/wallets', walletsRouter);
 app.use('/api/stations', stationsRouter);
 app.use('/api/trains', trainsRouter);
 app.use('/api/tickets', ticketsRouter);
+
 app.use('/api/routes', routesRouter);
 
 // base routes
