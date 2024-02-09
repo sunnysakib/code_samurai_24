@@ -22,7 +22,7 @@ const bookSchema = new mongoose.Schema({
         type: Number,
         required: true,
         min: [0, "price can't be negative"],
-    },
+    }
 });
 
 module.exports = mongoose.model('Book', bookSchema);

@@ -1,17 +1,20 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-    username: {
-        type: String,
-        unique: [true, "username must be unique"],
+    user_id: {
+        type: Number,
+        unique: true,
         required: true,
     },
-    experience: {
+    user_name: {
+        type: String,
+        required: true,
+    },
+    balance: {
         type: Number,
         required: true,
-        min: [0, "experience can't be negative"]
+        min: [0, "Balance can't be negative"],
     },
-    languages: [String]
-})
+});
 
 module.exports = mongoose.model('User', userSchema);
