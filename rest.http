@@ -1,3 +1,13 @@
 
-# all books
-GET http://localhost:5000/api/books
+# post user
+POST http://localhost:8000/api/users
+{
+"user_id": 1,
+"user_name": "Fahim",
+"balance": 100
+}
+
+
+POST http://localhost:8000/api/train
+
+
