@@ -7,15 +7,12 @@ const stopSchema = new mongoose.Schema({
     },
     arrival_time: {
         type: String,
-        required: true,
     },
     departure_time: {
         type: String,
-        required: true,
     },
     fare: {
         type: Number,
-        required: true,
     },
 });
 
@@ -35,7 +32,6 @@ const trainSchema = new mongoose.Schema({
     },
     stops: {
         type: [stopSchema],
-        required: true,
     },
 });
 
